@@ -1,3 +1,3 @@
 RewriteEngine On
-RewriteCond %{HTTP_HOST} ^{{ .Param.Domain }}$ [NC]
+RewriteCond %{HTTP_HOST} ^{{ .Params.Domain }}$ [NC]
 RewriteRule ^(.*)$ {{ .Site.BaseURL }}/$1 [R=301,L]
