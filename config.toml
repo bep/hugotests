@@ -1,0 +1,23 @@
+baseurl = "https://domain.com/"
+languageCode = "en-us"
+title = "Testing Hugo"
+theme = "hugo_theme_robust"
+
+[mediaTypes]
+[mediaTypes."text/htaccess"]
+suffix = "htaccess"
+
+[outputFormats]
+[outputFormats.MyHTA]
+mediaType = "text/htaccess"
+baseName = ""
+isPlainText = true
+
+[outputs]
+  home = ["HTML", "MyHTA"]
+  page = ["HTML", "MyHTA"]
+  
+[Params]
+  Domain = "domain.com"
+  Author = "Ricardo Tutume"
+  

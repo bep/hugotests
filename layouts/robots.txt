@@ -1,0 +1,6 @@
+User-agent: *
+{{ if eq .Site.BaseURL "stage.domain.com" }}
+    Disallow: /
+{{ else }}
+    Allow: /
+{{ end }}
